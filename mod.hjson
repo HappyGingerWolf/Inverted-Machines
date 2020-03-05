@@ -2,5 +2,5 @@ name: inverted-machines
 displayName: "[blue]Inverted Machines"
 author: GingerWolf
 description: Adds inverted versions of various machines.
-version: 2-3
+version: 2-4
 minGameVersion: 103

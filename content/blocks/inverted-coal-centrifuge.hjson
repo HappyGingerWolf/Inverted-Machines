@@ -2,10 +2,11 @@ type: GenericCrafter
 name: Inverted Coal Centrifuge
 description: Unsolidifies chunks of coal into oil.
 size: 2
-health: 60
 hasPower: true
 hasLiquid: true
+hasItems: true
 craftTime: 30
+craftEffect: smeltsmoke
 consumes: {
   power: 0.5
   items: {
@@ -20,6 +21,5 @@ requirements: [
   lead/30
 ]
 category: crafting
-craftEffect: smeltsmoke
 outputLiquid: oil/2.7
 research: coal-centrifuge
