@@ -1,0 +1,22 @@
+type: GenericCrafter
+name: Inverted Pulverizer
+description: Uncrushes fine sand into scrap.
+size: 1
+hasPower: true
+hasItems: true
+craftTime: 40
+updateEffect: pulverizeSmall
+consumes: {
+  power: 0.5
+  items: {
+    items: [
+      scrap/1
+    ]
+  }
+}
+requirements: [
+  copper/30
+  lead/25
+]
+category: crafting
+outputItem: sand/1
