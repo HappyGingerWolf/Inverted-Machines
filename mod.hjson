@@ -1,6 +1,6 @@
 name: "inverted-pulverizer"
 displayName: "[blue]Inverted Pulverizer"
 author: "GingerWolf"
-description: "A mod that adds more elements including iron, aluminium, lithium, and more!"
+description: "Adds an inverted version of the pulverizer, which turns sand into scrap."
 version: "1"
 minGameVersion: "103"
