@@ -10,7 +10,7 @@ consumes: {
   power: 0.5
   items: {
     items: [
-      scrap/1
+      sand/1
     ]
   }
 }
@@ -19,4 +19,4 @@ requirements: [
   lead/25
 ]
 category: crafting
-outputItem: sand/1
+outputItem: scrap/1
