@@ -1,0 +1,24 @@
+name: Inverted Coal Centrifuge
+description: Unsolidifies chunks of coal into oil.
+size: 2
+health: 60
+hasPower: true
+hasLiquid: true
+craftTime: 0.5
+consumes: {
+  power: 0.5
+  items: {
+    items: [
+      coal/1
+    ]
+  }
+}
+requirements: [
+  titanium/20
+  graphite/40
+  lead/30
+]
+category: crafting
+craftEffect: smeltsmoke
+liquidOutput: oil/2.7
+research: coal-centrifuge

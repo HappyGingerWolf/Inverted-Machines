@@ -6,6 +6,7 @@ hasPower: true
 hasItems: true
 craftTime: 40
 updateEffect: pulverizeSmall
+craftEffect: pulverize
 consumes: {
   power: 0.5
   items: {
@@ -20,3 +21,4 @@ requirements: [
 ]
 category: crafting
 outputItem: scrap/1
+research: pulverizer

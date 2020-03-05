@@ -5,7 +5,7 @@ size: 2
 hasPower: true
 hasItems: true
 craftTime: 90
-updateEffect: pulverizeMedium
+craftEffect: pulverizeMedium
 consumes: {
   power: 0.5
   items: {
@@ -20,3 +20,4 @@ requirements: [
 ]
 category: crafting
 outputItem: coal/2
+research: graphite-press
