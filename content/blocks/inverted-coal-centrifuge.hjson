@@ -1,3 +1,4 @@
+type: GenericCrafter
 name: Inverted Coal Centrifuge
 description: Unsolidifies chunks of coal into oil.
 size: 2
