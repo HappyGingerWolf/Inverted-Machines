@@ -1,0 +1,22 @@
+type: GenericCrafter
+name: Inverted Graphite Press
+description: Decompresses pure sheets of graphite into chunks of coal.
+size: 2
+hasPower: true
+hasItems: true
+craftTime: 90
+updateEffect: pulverizeMedium
+consumes: {
+  power: 0.5
+  items: {
+    items: [
+      graphite/1
+    ]
+  }
+}
+requirements: [
+  copper/75
+  lead/30
+]
+category: crafting
+outputItem: coal/2
