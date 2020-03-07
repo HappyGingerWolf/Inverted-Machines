@@ -19,4 +19,5 @@ requirements: [
   lead/25
 ]
 category: crafting
+research: pulverizer
 outputItem: scrap/1
