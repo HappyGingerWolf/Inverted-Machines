@@ -1,0 +1,29 @@
+type: GenericCrafter
+name: Inverse Multi-Press
+description: An upgraded version of the inverted graphite press. Employs power to process graphite into coal and water quickly and efficiently.
+outputLiquid: {
+  liquid: water
+  amount: 3
+}
+outputItem: {
+  item: coal
+  amount: 3
+}
+size: 3
+hasPower: true
+hasItem: true
+hasLiquids: true
+craftTime: 30
+craftEffect: pulveriseMedium
+consumes: {
+  power: 1.8
+  item: graphite/2
+}
+requirements: [
+  lead/100
+  graphite/50
+  titanium/100
+  silicon/25
+]
+category: crafting
+research: multi-press
