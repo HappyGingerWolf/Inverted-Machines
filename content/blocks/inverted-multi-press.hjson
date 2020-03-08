@@ -11,7 +11,7 @@ hasPower: true
 hasItem: true
 hasLiquids: true
 craftTime: 30
-craftEffect: pulveriseMedium
+craftEffect: pulverizeMedium
 consumes: {
   power: 1.8
   items: {
