@@ -14,7 +14,11 @@ craftTime: 30
 craftEffect: pulveriseMedium
 consumes: {
   power: 1.8
-  item: graphite/2
+  items: {
+    items: [
+      graphite/2
+    ]
+  }
 }
 requirements: [
   lead/100
