@@ -1,5 +1,5 @@
 type: GenericCrafter
-name: Inverted Separators
+name: Inverted Separator
 description: Mixes slag from its mineral components. Outputs the molten result.
 outputLiquid: {
   liquid: oil
