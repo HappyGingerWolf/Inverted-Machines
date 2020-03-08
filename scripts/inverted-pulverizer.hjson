@@ -4,7 +4,7 @@ const invertedPulverizer = extendContent(GenericCrafter, "inverted-pulverizer", 
 
     Draw.rect(this.region, tile.drawx(), tile.drawy());
 
-    Draw.rect(Core.atlas.find(this.name + "-rotator"), tile.drawx(), tile.drawy(), tile.entity.totalProgress * -2);
+    Draw.rect(Core.atlas.find(this.name + "-rotator"), tile.drawx(), tile.drawy(), tile.entity.totalProgress * 2);
 	},
 
 	generateIcons: function(){
