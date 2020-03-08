@@ -10,7 +10,7 @@ const invertedSeparator = extendContent(GenericCrafter, "inverted-separator", {
 	generateIcons: function(){
 		return [
 			Core.atlas.find(this.name),
-			Core.atlas.find(this.name + "-rotator"),
+			Core.atlas.find(this.name + "-spinner"),
 		];
 	},
 	
