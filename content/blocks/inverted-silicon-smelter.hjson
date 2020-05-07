@@ -1,0 +1,24 @@
+type: GenericSmelter
+name: Inverted Silicon Smelter
+description: Unreduces silicon. Produces sand and pure coal.
+size: 2
+hasPower: true
+hasItems: true
+craftTime: 40
+craftEffect: smeltsmoke
+updateEffect: pulverizeMedium
+flameColor: 001066
+consumes: {
+  items: {
+    items: [
+      silicon/1
+    ]
+  }
+  power: 0.5
+}
+requirements: [
+  copper/30
+  lead/25
+]
+category: crafting
+research: silicon-smelter
