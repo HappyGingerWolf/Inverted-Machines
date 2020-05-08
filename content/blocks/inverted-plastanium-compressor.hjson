@@ -1,5 +1,5 @@
 type: GenericCrafter
-name: Inverse Plastanium Compressor
+name: Inverted Plastanium Compressor
 description: Produces oil and titanium from plastanium.
 outputLiquid: {
   liquid: oil
