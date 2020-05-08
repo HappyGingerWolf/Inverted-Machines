@@ -2,8 +2,17 @@ const invertedSiliconSmelter = extendContent(GenericSmelter, "inverted-silicon-s
   setStats(){
     this.super$setStats();
     
-    this.stats.add(BlockStat.output, this.itemsYeeted[0]);
-    this.stats.add(BlockStat.output, this.itemsYeeted[1]);
+    this.stats.add(BlockStat.output, this.outputItems[0]);
+    this.stats.add(BlockStat.output, this.outputItems[1]);
+  },
+  shouldConsume(tile){
+    entity = tile.ent();
+    if(tile.entity.items.get(Items.sand) >= 20 || tile.entity.items.get(Items.coal) >= 10){
+      return false;
+    }
+    else{
+      return true;
+    }
   },
   update(tile){
     entity = tile.ent();
@@ -20,21 +29,18 @@ const invertedSiliconSmelter = extendContent(GenericSmelter, "inverted-silicon-s
     if(entity.progress >= 1){
       entity.cons.trigger();
       
+      this.offloadNear(tile, Items.coal);
       for(var i = 0; i < 2; i++){
         this.offloadNear(tile, Items.sand);
       }
-      this.offloadNear(tile, Items.coal);
       
       Effects.effect(this.craftEffect, tile.drawx(), tile.drawy());
       entity.progress = 0;
     }
     if(tile.entity.timer.get(this.timerDump, this.dumpTime)){
-      if(entity.items.get(Items.coal) > 0 && entity.items.get(Items.sand) < 1){
-        this.tryDump(tile, Items.coal);
-      }
-      if(entity.items.get(Items.sand) > 0 && entity.items.get(Items.coal) < 1){
-        this.tryDump(tile, Items.coal);
-      }
+      this.tryDump(tile, Items.coal);
+      this.tryDump(tile, Items.sand);
+      this.tryDump(tile, Items.sand);
     }
   },
   outputsItems(){
@@ -42,7 +48,5 @@ const invertedSiliconSmelter = extendContent(GenericSmelter, "inverted-silicon-s
   }
 });
 invertedSiliconSmelter.craftTime = 40;
-invertedSiliconSmelter.flameColor = Color.valueOf("001066");
-invertedSiliconSmelter.outputItem = ItemStack(Items.coal, 1); //has no functionality, jus tricks the normal java to stop producting.
-invertedSiliconSmelter.itemsYeeted = [ItemStack(Items.coal, 1), ItemStack(Items.sand, 2)];
+invertedSiliconSmelter.outputItems = [ItemStack(Items.coal, 1), ItemStack(Items.sand, 2)];
 invertedSiliconSmelter.craftEffect = Fx.smeltsmoke
