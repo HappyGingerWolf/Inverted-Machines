@@ -12,7 +12,7 @@ consumes: {
   power: 0.6
   liquid: {
     liquid: oil
-    amount: 18
+    amount: 0.3
   }
 }
 requirements: [
