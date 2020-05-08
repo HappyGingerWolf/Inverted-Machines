@@ -1,0 +1,23 @@
+type: GenericCrafter
+name: Inverse Spore Press
+description: Decompresses oil under tiny pressure to synthesize spore pods.
+outputItem: spore/1
+size: 2
+hasPower: true
+hasItem: true
+hasLiquids: true
+craftTime: 20
+craftEffect: none
+consumes: {
+  power: 0.6
+  liquid: {
+    liquid: oil
+    amount: 18
+  }
+}
+requirements: [
+  lead/35
+  silicon/30
+]
+category: crafting
+research: spore-press
