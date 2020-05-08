@@ -1,4 +1,4 @@
-const invertedSiliconSmelter = extendContent(GenericCrafter, "inverted-silicon-smelter", {
+const invertedSiliconSmelter = extendContent(GenericSmelter, "inverted-silicon-smelter", {
   setStats(){
     this.super$setStats();
     
@@ -6,14 +6,14 @@ const invertedSiliconSmelter = extendContent(GenericCrafter, "inverted-silicon-s
     this.stats.add(BlockStat.output, this.outputItems[1]);
   },
   load(){
-    super.load();
-    this.topRegion = Core.atlas.find(name + "-top");
+    this.region = Core.atlas.find(this.name);
+    this.topRegion = Core.atlas.find(this.name + "-top");
   },
   draw(tile){
-    super.draw(tile);
-
-    GenericCrafterEntity entity = tile.ent();
-
+    entity = tile.ent();
+    
+    Draw.rect(this.region, tile.drawx(), tile.drawy(), 0);
+    
     //draw glowing center
     if(entity.warmup > 0 && this.flameColor.a > 0.001){
       g = 0.3;
@@ -30,7 +30,7 @@ const invertedSiliconSmelter = extendContent(GenericCrafter, "inverted-silicon-s
 
       Draw.color();
     }
-  }
+  },
   update(tile){
     entity = tile.ent();
     
@@ -68,5 +68,6 @@ const invertedSiliconSmelter = extendContent(GenericCrafter, "inverted-silicon-s
   }
 });
 invertedSiliconSmelter.craftTime = 40;
+invertedSiliconSmelter.flameColor = Color.valueOf("001066");
 invertedSiliconSmelter.outputItems = [ItemStack(Items.coal, 1), ItemStack(Items.sand, 2)];
 invertedSiliconSmelter.craftEffect = Fx.smeltsmoke
