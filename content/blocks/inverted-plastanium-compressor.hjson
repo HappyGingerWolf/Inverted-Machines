@@ -1,0 +1,32 @@
+type: GenericCrafter
+name: Inverse Plastanium Compressor
+description: Produces oil and titanium from plastanium.
+outputLiquid: {
+  liquid: oil
+  amount: 15
+}
+outputItem: titanium/2
+health: 320
+size: 2
+hasPower: true
+hasItem: true
+hasLiquids: true
+craftTime: 60
+craftEffect: formsmoke
+updateEffect: plasticburn
+consumes: {
+  power: 3
+  items: {
+    items: [
+      plastanium/1
+    ]
+  }
+}
+requirements: [
+  lead/115
+  graphite/60
+  titanium/80
+  silicon/80
+]
+category: crafting
+research: plastanium-compressor
