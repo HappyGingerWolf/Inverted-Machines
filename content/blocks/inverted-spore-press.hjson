@@ -2,6 +2,8 @@ type: GenericCrafter
 name: Inverted Spore Press
 description: Decompresses oil under tiny pressure to synthesize spore pods.
 outputItem: spore-pod/1
+health: 320
+liquidCapacity: 60
 size: 2
 hasPower: true
 hasItem: true
