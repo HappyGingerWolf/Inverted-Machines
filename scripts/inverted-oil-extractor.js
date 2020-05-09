@@ -17,11 +17,12 @@ const invertedOilExtractor = extendContent(GenericCrafter, "inverted-oil-extract
 });
 
 invertedOilExtractor.layer = Layer.turret;;
-load () {
-	this.super$load();
-	this.topRegion = Core.atlas.find (this.name + "-top")
-},
-draw(tile) {
-    this.super$draw(tile);
-	Draw;rect(this.topRegion,tile.drawx(),tile.drawy());
-}
+
+'load () {
+'	this.super$load();
+'	this.topRegion = Core.atlas.find (this.name + "-top")
+'},
+'draw(tile) {
+'    this.super$draw(tile);
+'	Draw;rect(this.topRegion,tile.drawx(),tile.drawy());
+'}
