@@ -2,6 +2,7 @@ name: Inverted Silicon Smelter
 description: Unreduces silicon. Produces sand and pure coal.
 size: 2
 hasPower: true
+flameColor: ffef99
 consumes: {
   items: {
     items: [
