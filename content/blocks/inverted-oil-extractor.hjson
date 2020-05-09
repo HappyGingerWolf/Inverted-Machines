@@ -10,12 +10,13 @@ hasPower: true
 hasItem: true
 hasLiquids: true
 craftTime: 100
+liquidCapacity: 30
 updateEffect: pulverize
 updateEffectChance: 0.05
 consumes: {
   power: 3
   liquid: {
-    liquid: water
+    liquid: oil
     amount: 0.25
   }
 }
