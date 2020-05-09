@@ -1,4 +1,3 @@
-type: GenericCrafter
 name: Inverted Oil Extractor
 description: Uses large amounts of power and oil to drill for sand and water.
 outputLiquid: {
