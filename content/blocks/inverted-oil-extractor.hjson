@@ -5,6 +5,7 @@ outputLiquid: {
   amount: 15
 }
 outputItem: sand/1
+health: 360
 size: 3
 hasPower: true
 hasItem: true
@@ -29,3 +30,4 @@ requirements: [
 ]
 category: production
 research: oil-extractor
+attribute: oil
