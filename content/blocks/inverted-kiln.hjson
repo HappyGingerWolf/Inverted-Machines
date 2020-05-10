@@ -3,7 +3,6 @@ description: Unsmelts the compound known as metaglass into sand and lead. Requir
 size: 2
 hasPower: true
 flameColor: ffc099
-craftEffect: smeltsmoke
 consumes: {
   items: {
     items: [
