@@ -1,0 +1,21 @@
+name: Inverted Kiln
+description: Unsmelts the compound known as metaglass into sand and lead. Requires small amounts of power to run.
+size: 2
+hasPower: true
+flameColor: ffc099
+craftEffect: smeltsmoke
+consumes: {
+  items: {
+    items: [
+      metaglass/1
+    ]
+  }
+  power: 0.6
+}
+requirements: [
+  copper/60
+  lead/30
+  graphite/30
+]
+category: crafting
+research: kiln
