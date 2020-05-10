@@ -11,6 +11,7 @@ const invertedOilExtractor = extendContent(GenericCrafter, "inverted-oil-extract
 		return [
 			Core.atlas.find(this.name),
 			Core.atlas.find(this.name + "-rotator"),
+			Core.atlas.find(this.name + "-top")
 		];
 	},
 	

@@ -3,7 +3,7 @@ const invertedSporePress = extendContent(GenericCrafter, "inverted-spore-press",
     this.super$load();
     this.topRegion = Core.atlas.find(this.name + "-top");
     this.liquidRegion = Core.atlas.find(this.name + "-liquid");
-    for(i = 0; i < 3; i++){
+    for(i = 0; i < 4; i++){
       this.unsquishRegions[i] = Core.atlas.find(this.name + "-squishy-" + i);
     }
   },
@@ -11,13 +11,12 @@ const invertedSporePress = extendContent(GenericCrafter, "inverted-spore-press",
     this.super$draw(tile);
     entity = tile.ent();
     
-    Draw.color(tile.entity.liquids.current().color);
-    Draw.alpha(tile.entity.liquids.total() / this.liquidCapacity);
+    Draw.rect(this.unsquishRegions[Mathf.round(Mathf.absin(entity.totalProgress, 5.0, 2.999))], tile.drawx(), tile.drawy());
+    
+    Draw.color(Color.clear, tile.entity.liquids.current().color, tile.entity.liquids.total() / this.liquidCapacity);
     Draw.rect(this.liquidRegion, tile.drawx(), tile.drawy());
+    Draw.color();
     
-    Draw.reset();
-    
-    Draw.rect(this.unsquishRegions[Mathf.round(Mathf.absin(entity.totalProgress, 5, 2.999))], tile.drawx(), tile.drawy());
     Draw.rect(this.topRegion, tile.drawx(), tile.drawy());
 	},
 	generateIcons(){
@@ -28,3 +27,4 @@ const invertedSporePress = extendContent(GenericCrafter, "inverted-spore-press",
 	}
 });
 invertedSporePress.liquidCapacity = 60;
+invertedSporePress.unsquishRegions = [];
