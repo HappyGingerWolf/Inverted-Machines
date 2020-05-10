@@ -8,10 +8,9 @@ outputItem: sand/1
 health: 360
 size: 3
 hasPower: true
-hasItem: true
+hasItems: true
 hasLiquids: true
 craftTime: 100
-liquidCapacity: 30
 updateEffect: pulverize
 updateEffectChance: 0.05
 consumes: {
@@ -30,4 +29,3 @@ requirements: [
 ]
 category: production
 research: oil-extractor
-attribute: oil

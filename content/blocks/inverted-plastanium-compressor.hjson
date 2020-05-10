@@ -10,7 +10,7 @@ health: 320
 liquidCapacity: 60
 size: 2
 hasPower: true
-hasItem: true
+hasItems: true
 hasLiquids: true
 craftTime: 60
 craftEffect: formsmoke
