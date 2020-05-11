@@ -8,7 +8,7 @@ outputLiquid: {
 outputItem: coal/3
 size: 3
 hasPower: true
-hasItem: true
+hasItems: true
 hasLiquids: true
 craftTime: 30
 craftEffect: pulverizeMedium

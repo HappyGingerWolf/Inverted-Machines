@@ -6,14 +6,12 @@ const invertedPulverizer = extendContent(GenericCrafter, "inverted-pulverizer", 
 
     Draw.rect(Core.atlas.find(this.name + "-rotator"), tile.drawx(), tile.drawy(), tile.entity.totalProgress * -2);
 	},
-
-	generateIcons: function(){
+	generateIcons(){
 		return [
 			Core.atlas.find(this.name),
 			Core.atlas.find(this.name + "-rotator"),
 		];
-	},
-	
+	}
 });
 
 invertedPulverizer.layer = Layer.turret;;
