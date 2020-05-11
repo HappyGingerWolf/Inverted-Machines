@@ -31,7 +31,7 @@ const invertedAlloySmelter = extendContent(GenericSmelter, "inverted-alloy-smelt
     if(entity.progress >= 1){
       entity.cons.trigger();
       
-      for(a = 0; a < 3, a++){
+      for(a = 0; a < 3; a++){
         this.offloadNear(tile, Items.copper);
       }
       for(b = 0; b < 4; b++){
@@ -48,7 +48,7 @@ const invertedAlloySmelter = extendContent(GenericSmelter, "inverted-alloy-smelt
       entity.progress = 0;
     }
     if(tile.entity.timer.get(this.timerDump, this.dumpTime)){
-      for(a = 0; a < 3, a++){
+      for(a = 0; a < 3; a++){
         this.tryDump(tile, Items.copper);
       }
       for(b = 0; b < 4; b++){
