@@ -6,6 +6,7 @@ outputLiquid: {
 }
 outputItem: titanium/1
 size: 2
+health: 60
 hasPower: true
 hasItems: true
 hasLiquids: true
