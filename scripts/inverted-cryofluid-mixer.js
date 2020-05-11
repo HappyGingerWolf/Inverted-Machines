@@ -8,7 +8,8 @@ const invertedCryofluidMixer = extendContent(GenericCrafter, "inverted-cryofluid
     this.super$draw(tile);
     entity = tile.ent();
     
-    Draw.color(Color.clear, Color.valueOf("6ecdec"), tile.entity.liquids.get(this.outputLiquid.liquid) / this.liquidCapacity);
+    Draw.color(this.outputLiquid.liquid.color);
+    Draw.alpha(LiquidModule.get(this.outputLiquid.liquid) / this.liquidCapacity);
     Draw.rect(this.liquidRegion, tile.drawx(), tile.drawy());
     Draw.color();
     
