@@ -25,9 +25,9 @@ const invertedSeparator = extendContent(GenericCrafter, "inverted-separator", {
 	},
   acceptItem(item,tile,source){
     const entity=tile.ent();
-	  var inhale = false;
+	var inhale = false;
     for(no = 0; no < 4; no++){
-	    inhale |= item == this.mixingItems[no].item ? true : false;
+	inhale |= item == this.mixingItems[no].item ? true : false;
     }
 	return true&&entity.items.get(item) < this.itemCapacity;
   },
