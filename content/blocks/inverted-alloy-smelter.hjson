@@ -2,7 +2,6 @@ name: Inverted Alloy Smelter
 description: Separates surge alloy to produce titanium, lead, silicon and copper.
 size: 3
 hasPower: true
-craftEffect: smeltsmoke
 consumes: {
   items: {
     items: [
