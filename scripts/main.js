@@ -5,3 +5,5 @@ require("inverted-kiln");
 require("inverted-oil-extractor");
 require("inverted-spore-press");
 require("inverted-cryofluid-mixer");
+require("inverted-alloy-smelter");
+
