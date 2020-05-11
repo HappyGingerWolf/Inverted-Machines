@@ -1,0 +1,20 @@
+ame: Inverted Alloy Smelter
+description: Separates surge alloy to produce titanium, lead, silicon and copper.
+size: 3
+hasPower: true
+craftEffect: smeltsmoke
+consumes: {
+  items: {
+    items: [
+      surge-alloy/1
+    ]
+  }
+  power: 4
+}
+requirements: [
+  lead/80
+  silicon/80
+  thorium/70
+]
+category: crafting
+research: alloy-smelter
