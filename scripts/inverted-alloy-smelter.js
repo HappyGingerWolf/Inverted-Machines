@@ -9,7 +9,7 @@ const invertedAlloySmelter = extendContent(GenericSmelter, "inverted-alloy-smelt
   },
   shouldConsume(tile){
     entity = tile.ent();
-    if(tile.entity.items.get(Items.copper) >= 10 || tile.entity.items.get(Items.lead) >= 10) || tile.entity.items.get(Items.titanium) >= 10) || tile.entity.items.get(Items.silicon) >= 10){
+    if(tile.entity.items.get(Items.copper) >= 10 || tile.entity.items.get(Items.lead) >= 10 || tile.entity.items.get(Items.titanium) >= 10 || tile.entity.items.get(Items.silicon) >= 10){
       return false;
     }
     else{
@@ -31,27 +31,35 @@ const invertedAlloySmelter = extendContent(GenericSmelter, "inverted-alloy-smelt
     if(entity.progress >= 1){
       entity.cons.trigger();
       
-      this.offloadNear(tile, Items.copper);
-      this.offloadNear(tile, Items.lead);
-      this.offloadNear(tile, Items.titanium);
+      for(a = 0; a < 3, a++){
+        this.offloadNear(tile, Items.copper);
+      }
+      for(b = 0; b < 4; b++){
+        this.offloadNear(tile, Items.lead);
+      }
+      for(c = 0; c < 2; c++){
+        this.offloadNear(tile, Items.titanium);
+      }
+      for(d = 0; d < 2; d++){
       this.offloadNear(tile, Items.silicon);
+      }
       
       Effects.effect(this.craftEffect, tile.drawx(), tile.drawy());
       entity.progress = 0;
     }
     if(tile.entity.timer.get(this.timerDump, this.dumpTime)){
-      this.tryDump(tile, Items.copper);
-      this.tryDump(tile, Items.copper);
-      this.tryDump(tile, Items.copper);
-      this.tryDump(tile, Items.lead);
-      this.tryDump(tile, Items.lead);
-      this.tryDump(tile, Items.lead);
-      this.tryDump(tile, Items.lead);
-      this.tryDump(tile, Items.titanium);
-      this.tryDump(tile, Items.titanium);
+      for(a = 0; a < 3, a++){
+        this.tryDump(tile, Items.copper);
+      }
+      for(b = 0; b < 4; b++){
+        this.tryDump(tile, Items.lead);
+      }
+      for(c = 0; c < 2; c++){
+        this.tryDump(tile, Items.titanium);
+      }
+      for(d = 0; d < 2; d++){
       this.tryDump(tile, Items.silicon);
-      this.tryDump(tile, Items.silicon);
-      this.tryDump(tile, Items.silicon);
+      }
     }
   },
   outputsItems(){
