@@ -40,7 +40,7 @@ const invertedAlloySmelter = extendContent(GenericSmelter, "inverted-alloy-smelt
       for(c = 0; c < 2; c++){
         this.offloadNear(tile, Items.titanium);
       }
-      for(d = 0; d < 2; d++){
+      for(d = 0; d < 3; d++){
       this.offloadNear(tile, Items.silicon);
       }
       
@@ -57,7 +57,7 @@ const invertedAlloySmelter = extendContent(GenericSmelter, "inverted-alloy-smelt
       for(c = 0; c < 2; c++){
         this.tryDump(tile, Items.titanium);
       }
-      for(d = 0; d < 2; d++){
+      for(d = 0; d < 3; d++){
       this.tryDump(tile, Items.silicon);
       }
     }
