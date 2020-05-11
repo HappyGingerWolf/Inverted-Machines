@@ -17,7 +17,8 @@ const invertedSeparator = extendContent(GenericCrafter, "inverted-separator", {
 
     Draw.rect(this.region, tile.drawx(), tile.drawy());
     
-    Draw.color(Color.clear, tile.entity.liquids.current().color, tile.entity.liquids.get(this.outputLiquid.liquid) / this.liquidCapacity);
+    Draw.color(this.outputLiquid.liquid.color);
+    Draw.alpha(tile.entity.liquids.get(this.outputLiquid.liquid) / this.liquidCapacity);
     Draw.rect(this.liquidRegion, tile.drawx(), tile.drawy());
     Draw.color();
     
