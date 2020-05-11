@@ -1,9 +1,5 @@
 name: Inverted Separator
 description: Mixes slag from its mineral components. Outputs the molten result.
-outputLiquid: {
-  liquid: slag
-  amount: 30
-}
 size: 2
 hasPower: true
 hasItems: true
