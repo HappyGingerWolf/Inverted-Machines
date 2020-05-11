@@ -25,11 +25,11 @@ const invertedSeparator = extendContent(GenericCrafter, "inverted-separator", {
 	},
   acceptItem(item,tile,source){
     const entity=tile.ent();
-	var inhale = false;
-    for(no = 0; no < 4; no++){
-	inhale |= item == this.mixingItems[no].item ? true : false;
+    var inhale = false;
+    for(i = 0; i < this.mixingItems.length; i++){
+      inhale|=item==this.mixingItems[i].item?true:false;
     }
-	return true&&entity.items.get(item) < this.itemCapacity;
+    return inhale&&entity.items.get(item)<this.itemCapacity;
   },
   shouldConsume(tile){
     entity = tile.ent();
