@@ -1,5 +1,5 @@
 name: Inverted Spore Press
-description: Decompresses oil under extreme... uh... unpressure to synthesize spore pods.
+description: Decompresses oil under extreme vacuum to synthesize spore pods.
 outputItem: spore-pod/1
 health: 320
 size: 2
