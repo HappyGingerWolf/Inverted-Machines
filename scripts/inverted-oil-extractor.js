@@ -9,8 +9,8 @@ const invertedOilExtractor = extendContent(GenericCrafter, "inverted-oil-extract
     this.super$draw(tile);
     entity = tile.ent();
     
-    Draw.color(tile.entity.liquids.current().color);
-    Draw.alpha(tile.entity.liquids.total() / this.liquidCapacity);
+    Draw.color(this.outputLiquid.liquid.color);
+    Draw.alpha(tile.entity.liquids.get(this.outputLiquid.liquid) / this.liquidCapacity);
     Draw.rect(this.liquidRegion, tile.drawx(), tile.drawy());
     
     Draw.reset();
