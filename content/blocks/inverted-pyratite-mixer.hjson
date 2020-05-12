@@ -8,7 +8,7 @@ consumes: {
       pyratite/1
     ]
   }
-  power: 0.4
+  power: 0.2
 }
 requirements: [
   copper/50
