@@ -48,5 +48,5 @@ const invertedSiliconSmelter = extendContent(GenericSmelter, "inverted-silicon-s
   }
 });
 invertedSiliconSmelter.craftTime = 40;
-invertedSiliconSmelter.outputItems = [new ItemStack(Items.coal, 1), new ItemStack(Items.sand, 2)];
+invertedSiliconSmelter.outputItems = ItemStack.with(Items.coal, 1, Items.sand, 2);
 invertedSiliconSmelter.craftEffect = Fx.smeltsmoke

@@ -46,5 +46,5 @@ const invertedKiln = extendContent(GenericSmelter, "inverted-kiln", {
   }
 });
 invertedKiln.craftTime = 40;
-invertedKiln.outputItems = [ItemStack(Items.lead, 1), ItemStack(Items.sand, 1)];
+invertedKiln.outputItems = ItemStack.with(Items.lead, 1, Items.sand, 1);
 invertedKiln.craftEffect = Fx.smeltsmoke

@@ -67,5 +67,5 @@ const invertedAlloySmelter = extendContent(GenericSmelter, "inverted-alloy-smelt
   }
 });
 invertedAlloySmelter.craftTime = 40;
-invertedAlloySmelter.outputItems = [ItemStack(Items.copper, 3), ItemStack(Items.lead, 4), ItemStack(Items.titanium, 2), ItemStack(Items.silicon, 3)];
+invertedAlloySmelter.outputItems = ItemStack.with(Items.copper, 3, Items.lead, 4, Items.titanium, 2, Items.silicon, 3);
 invertedAlloySmelter.craftEffect = Fx.smeltsmoke
