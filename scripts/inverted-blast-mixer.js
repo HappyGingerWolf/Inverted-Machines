@@ -45,4 +45,4 @@ const invertedBlastMixer = extendContent(GenericSmelter, "inverted-blast-mixer",
   }
 });
 invertedBlastMixer.craftTime = 80;
-invertedBlastMixer.outputItems = [new ItemStack(Items.pyratite, 1), new ItemStack(Items.spore-pod, 1)];
+invertedBlastMixer.outputItems = ItemStack.with(Items.pyratite, 1, Items.spore-pod, 1);
