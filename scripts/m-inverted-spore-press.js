@@ -1,4 +1,4 @@
-const invertedSporePress = extendContent(GenericCrafter, "inverted-spore-press", {
+const invertedSporePress = extendContent(GenericCrafter, "m-inverted-spore-press", {
   load(){
     this.super$load();
     this.topRegion = Core.atlas.find(this.name + "-top");
