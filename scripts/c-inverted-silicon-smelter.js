@@ -1,4 +1,4 @@
-const invertedSiliconSmelter = extendContent(GenericSmelter, "inverted-silicon-smelter", {
+const invertedSiliconSmelter = extendContent(GenericSmelter, "c-inverted-silicon-smelter", {
   setStats(){
     this.super$setStats();
     
