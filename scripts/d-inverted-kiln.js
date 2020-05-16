@@ -1,4 +1,4 @@
-const invertedKiln = extendContent(GenericSmelter, "inverted-kiln", {
+const invertedKiln = extendContent(GenericSmelter, "d-inverted-kiln", {
   setStats(){
     this.super$setStats();
     
