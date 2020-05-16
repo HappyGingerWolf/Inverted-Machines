@@ -1,4 +1,4 @@
-const invertedPyratiteMixer = extendContent(GenericCrafter, "inverted-pyratite-mixer", {
+const invertedPyratiteMixer = extendContent(GenericCrafter, "j-inverted-pyratite-mixer", {
   setStats(){
     this.super$setStats();
     
