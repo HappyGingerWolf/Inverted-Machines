@@ -1,4 +1,4 @@
-const invertedSeparator = extendContent(GenericCrafter, "inverted-separator", {
+const invertedSeparator = extendContent(GenericCrafter, "l-inverted-separator", {
   load(){
     this.super$load();
     this.spinnerRegion = Core.atlas.find(this.name + "-spinner");
