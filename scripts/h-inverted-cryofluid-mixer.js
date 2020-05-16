@@ -1,4 +1,4 @@
-const invertedCryofluidMixer = extendContent(GenericCrafter, "inverted-cryofluid-mixer", {
+const invertedCryofluidMixer = extendContent(GenericCrafter, "h-inverted-cryofluid-mixer", {
   load(){
     this.super$load();
     this.topRegion = Core.atlas.find(this.name + "-top");
