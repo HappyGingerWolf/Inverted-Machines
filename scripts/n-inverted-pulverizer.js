@@ -1,4 +1,4 @@
-const invertedPulverizer = extendContent(GenericCrafter, "inverted-pulverizer", {
+const invertedPulverizer = extendContent(GenericCrafter, "n-inverted-pulverizer", {
 
 	draw(tile){
 
