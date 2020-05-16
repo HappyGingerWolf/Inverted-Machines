@@ -1,4 +1,4 @@
-const invertedBlastMixer = extendContent(GenericSmelter, "inverted-blast-mixer", {
+const invertedKiln = extendContent(GenericSmelter, "d-inverted-kiln", {
   setStats(){
     this.super$setStats();
     
@@ -7,7 +7,7 @@ const invertedBlastMixer = extendContent(GenericSmelter, "inverted-blast-mixer",
   },
   shouldConsume(tile){
     entity = tile.ent();
-    if(tile.entity.items.get(Items.spore-pod) >= 10 || tile.entity.items.get(Items.pyratite) >= 10){
+    if(tile.entity.items.get(Items.sand) >= 10 || tile.entity.items.get(Items.lead) >= 10){
       return false;
     }
     else{
@@ -29,20 +29,22 @@ const invertedBlastMixer = extendContent(GenericSmelter, "inverted-blast-mixer",
     if(entity.progress >= 1){
       entity.cons.trigger();
       
-      this.offloadNear(tile, Items.pyratite);
-      this.offloadNear(tile, Items.spore-pod);
+      this.offloadNear(tile, Items.lead);
+      this.offloadNear(tile, Items.sand);
       
       Effects.effect(this.craftEffect, tile.drawx(), tile.drawy());
       entity.progress = 0;
     }
     if(tile.entity.timer.get(this.timerDump, this.dumpTime)){
-      this.tryDump(tile, Items.pyratite);
-      this.tryDump(tile, Items.spore-pod);
+      this.tryDump(tile, Items.coal);
+      this.tryDump(tile, Items.sand);
+      this.tryDump(tile, Items.sand);
     }
   },
   outputsItems(){
     return true
   }
 });
-invertedBlastMixer.craftTime = 80;
-invertedBlastMixer.outputItems = ItemStack.with(Items.pyratite, 1, Items.spore-pod, 1);
+invertedKiln.craftTime = 40;
+invertedKiln.outputItems = ItemStack.with(Items.lead, 1, Items.sand, 1);
+invertedKiln.craftEffect = Fx.smeltsmoke

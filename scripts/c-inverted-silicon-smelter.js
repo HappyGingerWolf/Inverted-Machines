@@ -1,4 +1,4 @@
-const invertedKiln = extendContent(GenericSmelter, "inverted-kiln", {
+const invertedSiliconSmelter = extendContent(GenericSmelter, "c-inverted-silicon-smelter", {
   setStats(){
     this.super$setStats();
     
@@ -7,7 +7,7 @@ const invertedKiln = extendContent(GenericSmelter, "inverted-kiln", {
   },
   shouldConsume(tile){
     entity = tile.ent();
-    if(tile.entity.items.get(Items.sand) >= 10 || tile.entity.items.get(Items.lead) >= 10){
+    if(tile.entity.items.get(Items.sand) >= 20 || tile.entity.items.get(Items.coal) >= 10){
       return false;
     }
     else{
@@ -29,8 +29,10 @@ const invertedKiln = extendContent(GenericSmelter, "inverted-kiln", {
     if(entity.progress >= 1){
       entity.cons.trigger();
       
-      this.offloadNear(tile, Items.lead);
-      this.offloadNear(tile, Items.sand);
+      this.offloadNear(tile, Items.coal);
+      for(var i = 0; i < 2; i++){
+        this.offloadNear(tile, Items.sand);
+      }
       
       Effects.effect(this.craftEffect, tile.drawx(), tile.drawy());
       entity.progress = 0;
@@ -45,6 +47,6 @@ const invertedKiln = extendContent(GenericSmelter, "inverted-kiln", {
     return true
   }
 });
-invertedKiln.craftTime = 40;
-invertedKiln.outputItems = ItemStack.with(Items.lead, 1, Items.sand, 1);
-invertedKiln.craftEffect = Fx.smeltsmoke
+invertedSiliconSmelter.craftTime = 40;
+invertedSiliconSmelter.outputItems = ItemStack.with(Items.coal, 1, Items.sand, 2);
+invertedSiliconSmelter.craftEffect = Fx.smeltsmoke

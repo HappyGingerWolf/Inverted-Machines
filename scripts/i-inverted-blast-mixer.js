@@ -1,14 +1,13 @@
-const invertedPyratiteMixer = extendContent(GenericCrafter, "inverted-pyratite-mixer", {
+const invertedBlastMixer = extendContent(GenericSmelter, "i-inverted-blast-mixer", {
   setStats(){
     this.super$setStats();
     
     this.stats.add(BlockStat.output, this.outputItems[0]);
     this.stats.add(BlockStat.output, this.outputItems[1]);
-    this.stats.add(BlockStat.output, this.outputItems[2]);
   },
   shouldConsume(tile){
     entity = tile.ent();
-    if(tile.entity.items.get(Items.sand) >= 20 || tile.entity.items.get(Items.coal) >= 10 || tile.entity.items.get(Items.lead) >= 20){
+    if(tile.entity.items.get(Items.spore-pod) >= 10 || tile.entity.items.get(Items.pyratite) >= 10){
       return false;
     }
     else{
@@ -30,28 +29,20 @@ const invertedPyratiteMixer = extendContent(GenericCrafter, "inverted-pyratite-m
     if(entity.progress >= 1){
       entity.cons.trigger();
       
-      this.offloadNear(tile, Items.coal);
-      for(var i = 0; i < 2; i++){
-        this.offloadNear(tile, Items.sand);
-      }
-      for(var i = 0; i < 2; i++){
-        this.offloadNear(tile, Items.lead);
-      }
+      this.offloadNear(tile, Items.pyratite);
+      this.offloadNear(tile, Items.spore-pod);
       
       Effects.effect(this.craftEffect, tile.drawx(), tile.drawy());
       entity.progress = 0;
     }
     if(tile.entity.timer.get(this.timerDump, this.dumpTime)){
-      this.tryDump(tile, Items.coal);
-      this.tryDump(tile, Items.sand);
-      this.tryDump(tile, Items.sand);
-      this.tryDump(tile, Items.lead);
-      this.tryDump(tile, Items.lead);
+      this.tryDump(tile, Items.pyratite);
+      this.tryDump(tile, Items.spore-pod);
     }
   },
   outputsItems(){
     return true
   }
 });
-invertedPyratiteMixer.craftTime = 80;
-invertedPyratiteMixer.outputItems = ItemStack.with(Items.coal, 1, Items.sand, 2, Items.lead, 2);
+invertedBlastMixer.craftTime = 80;
+invertedBlastMixer.outputItems = ItemStack.with(Items.pyratite, 1, Items.spore-pod, 1);
