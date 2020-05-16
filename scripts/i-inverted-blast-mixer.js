@@ -1,4 +1,4 @@
-const invertedBlastMixer = extendContent(GenericSmelter, "inverted-blast-mixer", {
+const invertedBlastMixer = extendContent(GenericSmelter, "i-inverted-blast-mixer", {
   setStats(){
     this.super$setStats();
     
