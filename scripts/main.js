@@ -1,11 +1,11 @@
-require("inverted-pulverizer");
-require("inverted-separator");
-require("inverted-silicon-smelter");
-require("inverted-kiln");
 require("inverted-oil-extractor");
-require("inverted-spore-press");
-require("inverted-pyratite-mixer");
-require("inverted-blast-mixer");
-require("inverted-cryofluid-mixer");
-require("inverted-alloy-smelter");
+require("c-inverted-silicon-smelter");
+require("d-inverted-kiln");
+require("g-inverted-alloy-smelter");
+require("h-inverted-cryofluid-mixer");
+require("i-inverted-blast-mixer");
+require("j-inverted-pyratite-mixer");
+require("l-inverted-separator");
+require("m-inverted-spore-press");
+require("n-inverted-pulverizer");
 
