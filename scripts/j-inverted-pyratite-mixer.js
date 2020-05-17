@@ -43,10 +43,12 @@ const invertedPyratiteMixer = extendContent(GenericCrafter, "j-inverted-pyratite
     }
     if(tile.entity.timer.get(this.timerDump, this.dumpTime)){
       this.tryDump(tile, this.outputItems[0].item);
-      this.tryDump(tile, this.outputItems[1].item);
-      this.tryDump(tile, this.outputItems[1].item);
-      this.tryDump(tile, this.outputItems[2].item);
-      this.tryDump(tile, this.outputItems[2].item);
+      for(i = 0; i < 2; i++){
+        this.tryDump(tile, this.outputItems[1].item);
+      }
+      for(i = 0; i < 2; i++){
+        this.tryDump(tile, this.outputItems[2].item);
+      }
     }
   },
   outputsItems(){
