@@ -7,7 +7,7 @@ const invertedKiln = extendContent(GenericSmelter, "d-inverted-kiln", {
   },
   shouldConsume(tile){
     entity = tile.ent();
-    if(tile.entity.items.get(Items.sand) >= 10 || tile.entity.items.get(Items.lead) >= 10){
+    if(tile.entity.items.get(this.outputItems[1].item) >= 10 || tile.entity.items.get(this.outputItems[0].item) >= 10){
       return false;
     }
     else{
@@ -29,16 +29,15 @@ const invertedKiln = extendContent(GenericSmelter, "d-inverted-kiln", {
     if(entity.progress >= 1){
       entity.cons.trigger();
       
-      this.offloadNear(tile, Items.lead);
-      this.offloadNear(tile, Items.sand);
+      this.offloadNear(tile, this.outputItems[0].item);
+      this.offloadNear(tile, this.outputItems[1].item);
       
       Effects.effect(this.craftEffect, tile.drawx(), tile.drawy());
       entity.progress = 0;
     }
     if(tile.entity.timer.get(this.timerDump, this.dumpTime)){
-      this.tryDump(tile, Items.coal);
-      this.tryDump(tile, Items.sand);
-      this.tryDump(tile, Items.sand);
+      this.tryDump(tile, this.outputItems[0].item);
+      this.tryDump(tile, this.outputItems[1].item);
     }
   },
   outputsItems(){

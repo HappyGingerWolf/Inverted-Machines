@@ -7,7 +7,7 @@ const invertedSiliconSmelter = extendContent(GenericSmelter, "c-inverted-silicon
   },
   shouldConsume(tile){
     entity = tile.ent();
-    if(tile.entity.items.get(Items.sand) >= 20 || tile.entity.items.get(Items.coal) >= 10){
+    if(tile.entity.items.get(this.outputItems[1].item) >= 20 || tile.entity.items.get(this.outputItems[0].item) >= 10){
       return false;
     }
     else{
@@ -29,18 +29,18 @@ const invertedSiliconSmelter = extendContent(GenericSmelter, "c-inverted-silicon
     if(entity.progress >= 1){
       entity.cons.trigger();
       
-      this.offloadNear(tile, Items.coal);
+      this.offloadNear(tile, this.outputItems[0].item);
       for(var i = 0; i < 2; i++){
-        this.offloadNear(tile, Items.sand);
+        this.offloadNear(tile, this.outputItems[1].item);
       }
       
       Effects.effect(this.craftEffect, tile.drawx(), tile.drawy());
       entity.progress = 0;
     }
     if(tile.entity.timer.get(this.timerDump, this.dumpTime)){
-      this.tryDump(tile, Items.coal);
-      this.tryDump(tile, Items.sand);
-      this.tryDump(tile, Items.sand);
+      this.tryDump(tile, this.outputItems[0].item);
+      this.tryDump(tile, this.outputItems[1].item);
+      this.tryDump(tile, this.outputItems[1].item);
     }
   },
   outputsItems(){

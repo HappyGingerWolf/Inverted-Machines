@@ -8,4 +8,3 @@ require("j-inverted-pyratite-mixer");
 require("l-inverted-separator");
 require("m-inverted-spore-press");
 require("n-inverted-pulverizer");
-
