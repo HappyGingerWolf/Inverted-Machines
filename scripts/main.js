@@ -8,6 +8,7 @@ require("g-inverted-alloy-smelter");
 require("h-inverted-cryofluid-mixer");
 require("i-inverted-blast-mixer");
 require("j-inverted-pyratite-mixer");
+require("k-inverted-melter");
 require("l-inverted-separator");
 require("m-inverted-spore-press");
 require("n-inverted-pulverizer");
