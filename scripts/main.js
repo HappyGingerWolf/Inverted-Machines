@@ -12,3 +12,4 @@ require("k-inverted-melter");
 require("l-inverted-separator");
 require("m-inverted-spore-press");
 require("n-inverted-pulverizer");
+require("o-inverted-coal-centrifuge");
