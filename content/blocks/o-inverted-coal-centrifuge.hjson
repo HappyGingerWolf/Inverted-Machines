@@ -1,4 +1,3 @@
-type: GenericCrafter
 name: Inverted Coal Centrifuge
 description: Liquifies chunks of coal into oil.
 outputLiquid: {
