@@ -1,4 +1,3 @@
-type: GenericCrafter
 name: Inverted Graphite Press
 description: Decompresses pure sheets of graphite into chunks of coal.
 size: 2
