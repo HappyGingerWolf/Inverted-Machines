@@ -1,7 +1,9 @@
 require("inverted-oil-extractor");
 require("a-inverted-graphite-press");
+require("b-inverted-multi-press");
 require("c-inverted-silicon-smelter");
 require("d-inverted-kiln");
+require("e-inverted-plastanium-compressor");
 require("g-inverted-alloy-smelter");
 require("h-inverted-cryofluid-mixer");
 require("i-inverted-blast-mixer");
