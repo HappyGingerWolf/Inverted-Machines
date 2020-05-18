@@ -1,4 +1,3 @@
-type: GenericCrafter
 name: Inverted Multi-Press
 description: An upgraded version of the inverted graphite press. Employs power to process graphite into coal and water quickly and efficiently.
 outputLiquid: {
