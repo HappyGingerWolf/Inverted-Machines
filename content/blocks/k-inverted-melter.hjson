@@ -1,4 +1,3 @@
-type: GenericCrafter
 name: Inverted Melter
 description: Cools down slag into scrap for usage in pulverizers.
 outputItem: scrap/1
