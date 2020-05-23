@@ -4,6 +4,7 @@ require("b-inverted-multi-press");
 require("c-inverted-silicon-smelter");
 require("d-inverted-kiln");
 require("e-inverted-plastanium-compressor");
+require("f-inverted-phase-weaver");
 require("g-inverted-alloy-smelter");
 require("h-inverted-cryofluid-mixer");
 require("i-inverted-blast-mixer");
