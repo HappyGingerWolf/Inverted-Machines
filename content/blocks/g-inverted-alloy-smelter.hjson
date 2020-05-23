@@ -12,8 +12,8 @@ consumes: {
 }
 requirements: [
   lead/80
-  silicon/80
   thorium/70
+  silicon/80
 ]
 category: crafting
 research: alloy-smelter
