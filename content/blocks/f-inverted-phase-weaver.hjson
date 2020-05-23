@@ -1,5 +1,5 @@
 name: Inverted Phase Weaver
-description: Unynthesizes radioactive thorium and sand from phase fabric. Requires massive amounts of power to function.
+description: Unsynthesizes radioactive thorium and sand from phase fabric. Requires massive amounts of power to function.
 size: 2
 hasPower: true
 consumes: {
@@ -12,8 +12,8 @@ consumes: {
 }
 requirements: [
   lead/120
-  silicon/130
   thorium/75
+  silicon/130
 ]
 category: crafting
 research: phase-weaver
