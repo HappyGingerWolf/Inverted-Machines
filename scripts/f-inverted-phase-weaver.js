@@ -1,4 +1,4 @@
-const invertedPhaseWeaver = extendContent(GenericSmelter, "f-inverted-phase-weaver", {
+const invertedPhaseWeaver = extendContent(GenericCrafter, "f-inverted-phase-weaver", {
   setStats(){
     this.super$setStats();
     
