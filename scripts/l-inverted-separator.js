@@ -9,7 +9,7 @@ const invertedSeparator = extendContent(GenericCrafter, "l-inverted-separator", 
     
     for(yes = 0; yes < 3; yes++){
       this.stats.add(BlockStat.input, this.mixingItems[yes]);
-      this.stats.add(BlockStat.input, "or", "or");
+      this.stats.add(BlockStat.input, "or");
     }
     this.stats.add(BlockStat.input, this.mixingItems[3])
   },
