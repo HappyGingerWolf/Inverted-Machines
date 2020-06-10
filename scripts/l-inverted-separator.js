@@ -33,7 +33,7 @@ const invertedSeparator = extendContent(GenericCrafter, "l-inverted-separator", 
     return inhale&&entity.items.get(item)<this.itemCapacity;
   },
   shouldConsume(tile){
-    entity = tile.ent();
+    const entity = tile.ent();
     if(tile.entity.items.get(this.mixingItems[0].item) < 1 || tile.entity.items.get(this.mixingItems[1].item) < 1 || tile.entity.items.get(this.mixingItems[2].item) < 1 || tile.entity.items.get(this.mixingItems[3].item) < 1 || tile.entity.liquids.get(Liquids.slag) >= this.liquidCapacity){
       return false;
     }
@@ -42,7 +42,7 @@ const invertedSeparator = extendContent(GenericCrafter, "l-inverted-separator", 
     }
   },
   update(tile){
-    entity = tile.ent();
+    const entity = tile.ent();
     
     if(entity.cons.valid()){
       entity.progress += this.getProgressIncrease(entity, this.craftTime);

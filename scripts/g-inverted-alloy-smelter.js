@@ -8,7 +8,7 @@ const invertedAlloySmelter = extendContent(GenericSmelter, "g-inverted-alloy-sme
     this.stats.add(BlockStat.output, this.outputItems[3]);
   },
   shouldConsume(tile){
-    entity = tile.ent();
+    const entity = tile.ent();
     if(tile.entity.items.get(this.outputItems[0].item) >= 10 || tile.entity.items.get(this.outputItems[1].item) >= 10 || tile.entity.items.get(this.outputItems[2].item) >= 10 || tile.entity.items.get(this.outputItems[2].item) >= 10){
       return false;
     }
@@ -17,7 +17,7 @@ const invertedAlloySmelter = extendContent(GenericSmelter, "g-inverted-alloy-sme
     }
   },
   update(tile){
-    entity = tile.ent();
+    const entity = tile.ent();
     
     if(entity.cons.valid()){
       entity.progress += this.getProgressIncrease(entity, this.craftTime);

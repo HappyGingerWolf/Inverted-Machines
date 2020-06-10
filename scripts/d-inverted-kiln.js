@@ -6,7 +6,7 @@ const invertedKiln = extendContent(GenericSmelter, "d-inverted-kiln", {
     this.stats.add(BlockStat.output, this.outputItems[1]);
   },
   shouldConsume(tile){
-    entity = tile.ent();
+    const entity = tile.ent();
     if(tile.entity.items.get(this.outputItems[1].item) >= 10 || tile.entity.items.get(this.outputItems[0].item) >= 10){
       return false;
     }
@@ -15,7 +15,7 @@ const invertedKiln = extendContent(GenericSmelter, "d-inverted-kiln", {
     }
   },
   update(tile){
-    entity = tile.ent();
+    const entity = tile.ent();
     
     if(entity.cons.valid()){
       entity.progress += this.getProgressIncrease(entity, this.craftTime);

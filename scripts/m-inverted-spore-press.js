@@ -9,7 +9,7 @@ const invertedSporePress = extendContent(GenericCrafter, "m-inverted-spore-press
   },
 	draw(tile){
     this.super$draw(tile);
-    entity = tile.ent();
+    const entity = tile.ent();
     
     Draw.rect(this.unsquishRegions[Mathf.round(Mathf.absin(entity.totalProgress, 5.0, 2.999))], tile.drawx(), tile.drawy());
     

@@ -6,7 +6,7 @@ const invertedCryofluidMixer = extendContent(GenericCrafter, "h-inverted-cryoflu
   },
 	draw(tile){
     this.super$draw(tile);
-    entity = tile.ent();
+    const entity = tile.ent();
     
     Draw.color(this.outputLiquid.liquid.color);
     Draw.alpha(tile.entity.liquids.get(this.outputLiquid.liquid) / this.liquidCapacity);
