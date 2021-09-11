@@ -8,6 +8,10 @@ consumes: {
   item: phase-fabric
   power: 5
 }
+outputItems: [
+  thorium/4
+  sand/10
+]
 requirements: [
   silicon/130
   lead/120

@@ -9,7 +9,7 @@ consumes: {
 }
 outputLiquid: {
   liquid: oil
-  amount: 2.7
+  amount: 3
 }
 requirements: [
   titanium/20

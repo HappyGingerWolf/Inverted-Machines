@@ -8,6 +8,12 @@ consumes: {
   item: surge-alloy
   power: 4
 }
+outputItems: [
+  copper/3
+  lead/4
+  titanium/2
+  silicon/3
+]
 requirements: [
   silicon/80
   lead/80

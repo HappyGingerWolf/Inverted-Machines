@@ -6,7 +6,7 @@ craftTime: 10
 consumes: {
   liquid: {
     liquid: slag
-    amount: 2
+    amount: 0.2
   }
   power: 1
 }

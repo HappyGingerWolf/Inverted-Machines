@@ -7,7 +7,7 @@ craftEffect: none
 consumes: {
   liquid: {
     liquid: oil
-    amount: 6
+    amount: 0.3
   }
   power: 0.7
 }
