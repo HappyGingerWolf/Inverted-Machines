@@ -1,7 +1,5 @@
 type: GenericCrafter
 drawer: DrawGlow
-name: Inverted Plastanium Compressor
-description: Produces oil and titanium from plastanium.
 health: 320
 liquidCapacity: 60
 size: 2

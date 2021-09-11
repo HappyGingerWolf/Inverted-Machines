@@ -1,6 +1,4 @@
 type: GenericCrafter
-name: Inverted Coal Centrifuge
-description: Liquifies chunks of coal into oil.
 size: 2
 craftTime: 30
 craftEffect: coalSmeltsmoke

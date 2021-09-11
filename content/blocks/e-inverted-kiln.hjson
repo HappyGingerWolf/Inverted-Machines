@@ -3,8 +3,6 @@ drawer: {
   type: DrawSmelter
   flameColor: ffef99
 }
-name: Inverted Kiln
-description: Unsmelts the compound known as metaglass into sand and lead. Requires small amounts of power to run.
 size: 2
 craftEffect: smeltsmoke
 craftTime: 30

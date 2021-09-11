@@ -1,7 +1,5 @@
 type: GenericCrafter
 drawer: DrawLiquid
-name: Inverted Melter
-description: Cools down slag into scrap for usage in pulverizers.
 health: 200
 size: 1
 craftTime: 10

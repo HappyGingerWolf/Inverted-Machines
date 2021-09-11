@@ -3,8 +3,6 @@ drawer: {
   type: DrawSmelter
   flameColor: ffef99
 }
-name: Inverted Silicon Smelter
-description: Unreduces silicon. Produces sand and pure coal.
 size: 2
 craftEffect: smeltsmoke
 craftTime: 40

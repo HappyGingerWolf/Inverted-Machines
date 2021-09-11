@@ -1,6 +1,4 @@
 type: GenericCrafter
-name: Inverted Blast Mixer
-description: Uncrushes and separates blast compound to produce clusters of spores and pyratite.
 size: 2
 consumes: {
   item: blast-compound
