@@ -1,15 +1,16 @@
+type: GenericCrafter
 name: Inverted Pyratite Mixer
 description: Unmixes highly flammable pyratite into coal, lead and sand.
 size: 2
-hasPower: true
 consumes: {
-  items: {
-    items: [
-      pyratite/1
-    ]
-  }
+  item: pyratite
   power: 0.2
 }
+outputItems: [
+  coal/1
+  lead/2
+  sand/2
+]
 requirements: [
   copper/50
   lead/25

@@ -1,20 +1,19 @@
+type: GenericCrafter
+drawer: DrawAnimation
 name: Inverted Spore Press
 description: Decompresses oil under extreme vacuum to synthesize spore pods.
-outputItem: spore-pod/1
 health: 320
 size: 2
-hasPower: true
-hasItems: true
-hasLiquids: true
 craftTime: 20
 craftEffect: none
 consumes: {
-  power: 0.6
   liquid: {
     liquid: oil
-    amount: 0.3
+    amount: 6
   }
+  power: 0.7
 }
+outputItem: spore-pod/1
 requirements: [
   lead/35
   silicon/30

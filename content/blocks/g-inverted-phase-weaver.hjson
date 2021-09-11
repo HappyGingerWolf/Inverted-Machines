@@ -1,0 +1,19 @@
+type: GenericCrafter
+drawer: DrawWeave
+name: Inverted Phase Weaver
+description: Unsynthesizes radioactive thorium and sand from phase fabric. Requires massive amounts of power to function.
+size: 2
+itemCapacity: 20
+ambientSound: techLoop
+ambientSoundVolume: 0.02
+consumes: {
+  item: phase-fabric
+  power: 5
+}
+requirements: [
+  silicon/130
+  lead/120
+  thorium/75
+]
+category: crafting
+research: phase-weaver

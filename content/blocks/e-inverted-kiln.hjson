@@ -1,0 +1,27 @@
+type: GenericCrafter
+drawer: {
+  type: DrawSmelter
+  flameColor: ffef99
+}
+name: Inverted Kiln
+description: Unsmelts the compound known as metaglass into sand and lead. Requires small amounts of power to run.
+size: 2
+craftEffect: smeltsmoke
+craftTime: 30
+ambientSound: smelter
+ambientSoundVolume: 0.07
+consumes: {
+  item:  metaglass
+  power: 0.6
+}
+outputItems: [
+  lead/1
+  sand/1
+]
+requirements: [
+  copper/60
+  graphite/30
+  lead/30
+]
+category: crafting
+research: kiln

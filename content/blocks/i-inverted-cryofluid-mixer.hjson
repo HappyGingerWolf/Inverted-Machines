@@ -1,0 +1,31 @@
+type: GenericCrafter
+drawer: {
+  type: DrawMixer
+  useOutputSprite: true
+}
+name: Inverted Cryofluid Mixer
+description: Unmixes cryofluid into water and fine titanium powder.
+size: 2
+craftTime: 120
+rotate: false
+outputsLiquid: true
+solid: true
+consumes: {
+  liquid: {
+    liquid: cryofluid
+    amount: 0.2
+  }
+  power: 1
+}
+outputItem: titanium/1
+outputLiquid: {
+  liquid: water
+  amount: 24
+}
+requirements: [
+  lead/65
+  silicon/40
+  titanium/60
+]
+category: crafting
+research: cryofluid-mixer

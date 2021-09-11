@@ -1,26 +1,36 @@
-type: GenericCrafter
+type: AttributeCrafter
 drawer: {
   type: DrawSmelter
   flameColor: ffef99
 }
 name: Inverted Silicon Smelter
 description: Unreduces silicon. Produces sand and pure coal.
-size: 2
-craftEffect: smeltsmoke
-craftTime: 40
+size: 3
+itemCapactiy: 30
+craftTime: 90
+attribute: water  
+boostScale: 0.15
 ambientSound: smelter
 ambientSoundVolume: 0.07
+craftEffect: smeltsmoke
 consumes: {
-  item: silicon
-  power: 0.5
+  items: {
+    items: [
+      silicon/8
+    ]
+  }
+  power: 4
 }
 outputItems: [
-  coal/1
-  sand/2
+  coal/4
+  sand/6
+  pyratite/1
 ]
 requirements: [
-  copper/30
-  lead/25
+  titanium/120
+  metaglass/80
+  plastanium/35
+  silicon/60
 ]
 category: crafting
 research: silicon-smelter

@@ -1,0 +1,27 @@
+type: GenericCrafter
+drawer: DrawGlow
+name: Inverted Plastanium Compressor
+description: Produces oil and titanium from plastanium.
+health: 320
+liquidCapacity: 60
+size: 2
+craftTime: 60
+craftEffect: formsmoke
+updateEffect: plasticburn
+consumes: {
+  item: plastanium
+  power: 3
+}
+outputItem: titanium/2
+outputLiquid: {
+  liquid: oil
+  amount: 15
+}
+requirements: [
+  silicon/80
+  lead/115
+  graphite/60
+  titanium/80
+]
+category: crafting
+research: plastanium-compressor

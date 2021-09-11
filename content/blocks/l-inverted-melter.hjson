@@ -1,0 +1,22 @@
+type: GenericCrafter
+drawer: DrawLiquid
+name: Inverted Melter
+description: Cools down slag into scrap for usage in pulverizers.
+health: 200
+size: 1
+craftTime: 10
+consumes: {
+  liquid: {
+    liquid: slag
+    amount: 2
+  }
+  power: 1
+}
+outputItem: scrap/1
+requirements: [
+  copper/30
+  lead/35
+  graphite/45
+]
+category: crafting
+research: melter
