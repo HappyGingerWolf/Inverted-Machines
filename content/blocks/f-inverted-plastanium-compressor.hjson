@@ -6,6 +6,7 @@ size: 2
 craftTime: 60
 craftEffect: formsmoke
 updateEffect: plasticburn
+hasLiquids: true
 consumes: {
   item: plastanium
   power: 3

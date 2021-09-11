@@ -2,6 +2,7 @@ type: GenericCrafter
 size: 2
 craftTime: 30
 craftEffect: coalSmeltsmoke
+hasLiquids: true
 consumes: {
   item: coal
   power: 0.7

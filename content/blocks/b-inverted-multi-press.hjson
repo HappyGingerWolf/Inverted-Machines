@@ -3,6 +3,7 @@ size: 3
 itemCapacity: 20
 craftTime: 30
 craftEffect: pulverizeMedium
+hasLiquids: true
 consumes: {
   items: {
     items: [
